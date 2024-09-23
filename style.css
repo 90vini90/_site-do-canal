@@ -1,0 +1,502 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CONFIGURAÇÕES INICIAIS */
+
+header {
+    background-image: url(images/photo-1691989949393-7cc2a4a1c518.jpeg);
+    color: white;
+    height: 600px;
+    text-shadow: 0 0 10px #ffffff85;
+}
+
+header h1 {
+    font-family: 'Anton';
+    padding-top: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+header p {
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 0 0 10px #ffffff85;
+    text-indent: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+header nav {
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+header nav a:hover {
+    background-color: #ffffff5b;
+    color: #ffffff;
+    text-decoration: underline;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.foto-do-canal {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 50px;
+}
+
+.foto-canal{
+    width: 300px; 
+    height: 300px; 
+    box-shadow: 0 0 15px #ffffff; 
+    background-color: white; 
+    animation: flutuar 10s ease-in-out infinite; 
+    border-radius: 15px;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0); /* Posição inicial */
+    }
+    50% {
+        transform: translateY(-20px); /* Move para cima */
+    }
+    100% {
+        transform: translateY(0); /* Retorna à posição inicial */
+    }
+}
+
+/* TOPO DO SITE */
+
+body {
+    background-color: #80808098;
+}
+
+/* CORPO */
+
+main {
+    background-color: white;
+    margin: 5px 15px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+main section .cabecalho h1 {
+    color: #000052;
+    font-weight: bolder;
+    font-family: 'Anton';
+    letter-spacing: 1.1px;
+    font-size: 25px;
+    text-align: center;
+}
+
+main section .cabecalho p {
+    text-align: center;
+}
+
+main section .cabecalho p strong {
+    font-weight: bolder;
+    color: #000052;
+    text-shadow: 0 0 5px;
+}
+
+main section .produtos h1 {
+    color: #000052;
+    font-weight: bolder;
+    font-family: 'Anton';
+    letter-spacing: 1.1px;
+    font-size: 25px;
+    text-align: center;
+}
+
+main section .produtos .itens {
+    background-color: rgba(128, 128, 128, 0.6);
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 200px;
+    height: 100px;
+    line-height: 25px;
+    display: inline-block;
+    vertical-align: top;
+    align-items: center;
+}
+
+
+main section .produtos .itens:hover {
+    box-shadow: 0px 0px 15px black;
+    background-color: #8080805d;
+}
+
+main section .produtos .itens a {
+    color: white;
+}
+
+main section .produtos .itens a:visited {
+    color: purple;
+}
+
+main section .produtos .itens a:hover {
+    color: blue;
+}
+
+
+main section .produtos .itens a:active {
+    color:red
+}
+
+/* PRODUTOS */
+
+footer {
+    background-image: url(images/photo-1691989949393-7cc2a4a1c518.jpeg);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+footer p abbr {
+    text-decoration: none;
+}
+
+@media  (max-width: 800px) {
+    header {
+        background-image: url(images/photo-1691989949393-7cc2a4a1c518.jpeg);
+        color: white;
+        height: 600px;
+        text-shadow: 0 0 10px #ffffff85;
+    }
+    
+    header h1 {
+        font-family: 'Anton';
+        padding-top: 50px;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    header p {
+        text-align: center;
+        font-size: 20px;
+        text-shadow: 0 0 10px #ffffff85;
+        text-indent: 20px;
+    }
+    
+    header nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 5px;
+        font-weight: bolder;
+    }
+    
+    header nav {
+        text-align: center;
+        padding: 5px;
+        margin: 10px;
+    }
+    
+    header nav a:hover {
+        background-color: #ffffff5b;
+        color: #ffffff;
+        text-decoration: underline;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #ffffff;
+    }
+    
+    .foto-do-canal {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        margin: 50px;
+    }
+    
+    .foto-canal{
+        width: 300px; 
+        height: 300px; 
+        box-shadow: 0 0 15px #ffffff; 
+        background-color: white; 
+        animation: flutuar 10s ease-in-out infinite; 
+        border-radius: 15px;
+    }
+    
+    @keyframes flutuar {
+        0% {
+            transform: translateY(0); /* Posição inicial */
+        }
+        50% {
+            transform: translateY(-20px); /* Move para cima */
+        }
+        100% {
+            transform: translateY(0); /* Retorna à posição inicial */
+        }
+    }
+    
+    /* TOPO DO SITE */
+    
+    body {
+        background-color: #80808098;
+    }
+    
+    /* CORPO */
+    
+    main {
+        background-color: white;
+        margin: 5px 15px;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    
+    main section .cabecalho h1 {
+        color: #000052;
+        font-weight: bolder;
+        font-family: 'Anton';
+        letter-spacing: 1.1px;
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    main section .cabecalho p {
+        text-align: center;
+    }
+    
+    main section .cabecalho p strong {
+        font-weight: bolder;
+        color: #000052;
+        text-shadow: 0 0 5px;
+    }
+    
+    main section .produtos h1 {
+        color: #000052;
+        font-weight: bolder;
+        font-family: 'Anton';
+        letter-spacing: 1.1px;
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    main section .produtos .itens {
+            display: flex; /* Torna o container flexível */
+            justify-content: center; /* Centraliza os itens horizontalmente */
+            align-items: center; /* (Opcional) Centraliza os itens verticalmente */
+            flex-wrap: wrap; /* Faz os itens quebrarem para a próxima linha se não couberem */
+            margin: 0 auto; /* Centraliza o container se tiver uma largura definida */
+            margin-bottom: 25px;
+            margin-top: 25px;
+    }
+    
+    main section .produtos .itens:hover {
+        box-shadow: 0px 0px 15px black;
+        background-color: #8080805d;
+    }
+    
+    main section .produtos .itens a {
+        color: white;
+    }
+    
+    main section .produtos .itens a:visited {
+        color: purple;
+    }
+    
+    main section .produtos .itens a:hover {
+        color: blue;
+    }
+    
+    
+    main section .produtos .itens a:active {
+        color:red
+    }
+    
+    /* PRODUTOS */
+    
+    footer {
+        background-image: url(images/photo-1691989949393-7cc2a4a1c518.jpeg);
+        padding: 10px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+    
+    footer p abbr {
+        text-decoration: none;
+    }
+}
+
+@media (max-width:600px) {
+    header {
+        background-image: url(images/photo-1691989949393-7cc2a4a1c518.jpeg);
+        color: white;
+        height: 600px;
+        text-shadow: 0 0 10px #ffffff85;
+    }
+    
+    header h1 {
+        font-family: 'Anton';
+        padding-top: 50px;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    header p {
+        text-align: center;
+        font-size: 20px;
+        text-shadow: 0 0 10px #ffffff85;
+    }
+    
+    header nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 5px;
+        font-weight: bolder;
+    }
+    
+    header nav {
+        text-align: center;
+        padding: 5px;
+        margin: 10px;
+    }
+    
+    header nav a:hover {
+        background-color: #ffffff5b;
+        color: #ffffff;
+        text-decoration: underline;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #ffffff;
+    }
+    
+    .foto-do-canal {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        margin: 50px;
+    }
+    
+    .foto-canal{
+        width: 300px; 
+        height: 300px; 
+        box-shadow: 0 0 15px #ffffff; 
+        background-color: white; 
+        animation: flutuar 10s ease-in-out infinite; 
+        border-radius: 15px;
+    }
+    
+    @keyframes flutuar {
+        0% {
+            transform: translateY(0); /* Posição inicial */
+        }
+        50% {
+            transform: translateY(-20px); /* Move para cima */
+        }
+        100% {
+            transform: translateY(0); /* Retorna à posição inicial */
+        }
+    }
+    
+    /* TOPO DO SITE */
+    
+    body {
+        background-color: #80808098;
+    }
+    
+    /* CORPO */
+    
+    main {
+        background-color: white;
+        margin: 5px 15px;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    
+    main section .cabecalho h1 {
+        color: #000052;
+        font-weight: bolder;
+        font-family: 'Anton';
+        letter-spacing: 1.1px;
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    main section .cabecalho p {
+        text-align: center;
+    }
+    
+    main section .cabecalho p strong {
+        font-weight: bolder;
+        color: #000052;
+        text-shadow: 0 0 5px;
+    }
+    
+    main section .produtos h1 {
+        color: #000052;
+        font-weight: bolder;
+        font-family: 'Anton';
+        letter-spacing: 1.1px;
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    main section .produtos .itens {
+        display: flex; /* Torna o container flexível */
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        align-items: center; /* (Opcional) Centraliza os itens verticalmente */
+        flex-wrap: wrap; /* Faz os itens quebrarem para a próxima linha se não couberem */
+        margin: 0 auto; /* Centraliza o container se tiver uma largura definida */
+        margin-bottom: 25px;
+        margin-top: 25px;
+}
+
+    main section .produtos .itens:hover {
+        box-shadow: 0px 0px 15px black;
+        background-color: #8080805d;
+    }
+    
+    main section .produtos .itens a {
+        color: white;
+    }
+    
+    main section .produtos .itens a:visited {
+        color: purple;
+    }
+    
+    main section .produtos .itens a:hover {
+        color: blue;
+    }
+    
+    
+    main section .produtos .itens a:active {
+        color:red
+    }
+    
+    /* PRODUTOS */
+    
+    footer {
+        background-image: url(images/photo-1691989949393-7cc2a4a1c518.jpeg);
+        padding: 10px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+
+    footer p abbr {
+        text-decoration: none;
+    }
+
+}
